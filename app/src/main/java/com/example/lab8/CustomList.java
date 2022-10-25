@@ -23,6 +23,13 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
+    public int getCount(){
+        return cities.size();
+    }
+    public void addCity(City city){
+
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
