@@ -33,6 +33,21 @@ public class CustomListTest {
         assertEquals(list1.getCount(),listSize);
 
     }
+    @Test
+    public void HasCityTest(){
+        CustomList list2 = new CustomList(null, new ArrayList<City>());
+        list2.addCity(new City("Estevan", "SK"));
+        assertEquals(true, list2.hasCity(new City("Estevan", "SK")));
+
+    }
+    @Test
+    public void CountCitiesTest(){
+        list = new CustomList(null, new ArrayList<City>());
+        list.addCity(new City("Estevan", "SK"));
+        int listSize = list.getCount();
+        assertEquals(listSize, list.CountCities());
+
+    }
 
 
 

@@ -35,7 +35,6 @@ public class CustomList extends ArrayAdapter<City> {
 //        } else {
 //            return false;
 //        }
-        return true;
     }
 
     public void DeleteCity(City city){
