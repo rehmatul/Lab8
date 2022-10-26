@@ -30,11 +30,11 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
     public boolean hasCity(City city){
-//        if (cities.contains(city)){
-//            return true;
-//        } else {
-//            return false;
-//        }
+        if (cities.contains(city)){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public void DeleteCity(City city){
