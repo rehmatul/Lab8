@@ -25,14 +25,14 @@ public class CustomListTest {
     }
     @Test
     public void DeleteCityTest(){
-        list = new CustomList(null, new ArrayList<City>());
-        list.addCity(new City("Estevan", "SK"));
-        int listSize = list.getCount();
-        list.DeleteCity(new City("Estevan", "SK"));
-        assertEquals(list.getCount(),listSize-1);
+        CustomList list1;
+        list1 = new CustomList(null, new ArrayList<City>());
+        list1.addCity(new City("Estevan", "SK"));
+        int listSize = list1.getCount();
+        list1.DeleteCity(new City("Estevan", "SK"));
+        assertEquals(list1.getCount(),listSize);
 
     }
-
 
 
 
